@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+--dark-color: hsla(204, 72%, 48%, 1);
+--dark-color-lighter: hsla(204, 72%, 65%, 1);
+--dark-color-most-light: hsla(204, 72%, 75%, 1);
+--cadet-blue: hsla(181, 66%, 65%, 1);
+--medium-first: hsla(154, 57%, 80%, 1);
+--medium-second: hsl(0,0%,88%);
+--light-color: hsla(134, 46%, 93%, 1);
+--most-light: hsla(126, 20%, 98%, 1);
+}
+
+body, html, #app-container {
+    width:100vw;
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#app-container{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-gap: 10px;
+
+}
+
+#sidebar{
+    background-color: var(--dark-color);
+    display: grid;
+    grid-template-rows: 1fr 11fr;
+    margin: 0;
+    padding: 0;
+}
+#header-container {
+    border-bottom: 2px solid var(--most-light);
+}
+#sidebar-header{
+    color:var(--most-light);
+    margin-left:10px;
+}
+
+#friends-container{
+    display: grid;
+    align-items: center;
+    
+}
+#friends-container p{
+    padding: 10px;
+    background-color: var(--dark-color-lighter);
+    cursor: pointer;
+}
+#friends-container p:hover{
+    background-color: var(--dark-color-most-light);
+}
+#chat-area{
+    display: grid;
+    grid-template-rows: 11fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+#input-area{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    margin: 0;
+    padding: 0;
+}
+#conversation-area{
+    background-color: var(--light-color);
+    overflow: auto;
+    height: 90vh;
+}
+.msg-box{
+    padding:0px 10px 0px 20px;
+    width:auto;
+    grid-template-columns: 10fr 2fr;
+    border-radius:10px;
+    margin-top:10px;
+}
+.right-msg{
+    background-color: var(--medium-first);
+    float:right;
+    clear: both;
+    margin-right:20px;
+}
+.left-msg{
+    background-color: var(--medium-second);
+    float:left;
+    clear: both;
+    margin-left:20px;
+}
+.msg-text{
+    width:auto;
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 20px;
+    font-family: 'Kalam', cursive;
+}
+.msg-time{
+    width:auto;
+    display: inline-block;
+    font-size: 10px;
+}
+#chat-input{
+    font-size:20px;
+    padding-left:15px;
+}
+input{
+    font-family: 'Montserrat', sans-serif;
+}
+#send-button{
+    cursor: pointer;
+    background-color: var(--dark-color);
+    color:var(--most-light);
+    font-weight: 400;
+    font-size:15px;
+    border:0; 
+}
+#send-button:hover{
+    background-color: var(--dark-color-lighter);
+    border:0;
+}
+#send-button:active{
+    background-color: var(--dark-color-most-light);
+    border:0;
+}
