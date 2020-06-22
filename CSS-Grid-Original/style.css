@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+#content-container{
+    
+}
+nav{
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    align-content: center;
+    height: 100px;
+}
+#logo{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+#logo a{
+    font-family: 'Modak', cursive;
+    color:#111;
+    text-decoration: none;
+    font-size: 35px;
+}
+#logo a:hover{
+    color:#d30d0d;
+}
+#nav-bar-wrapper{
+    display: grid;
+    justify-content: center;
+}
+#nav-bar{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    grid-gap: 35px;
+}
+.nav-bar-item{
+    display: inline-block;
+}
+.nav-bar-item a{
+    color:#333;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-bar-item a:hover{
+border-bottom: 2px solid #333;
+}
+header{
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    align-content: center;
+    justify-content: center;
+    padding: 5%;
+}
+.header-text{
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 900;
+    min-width: 700px;
+}
