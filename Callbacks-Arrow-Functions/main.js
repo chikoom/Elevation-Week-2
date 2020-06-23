@@ -91,7 +91,7 @@ console.log(sumOfThree(1,2,3))
 // Exercise 5
 exDivider('5');
 
-const capitalize = string => string.toLowerCase().charAt(0).toUpperCase() + string.toLowerCase().slice(1)
+const capitalize = string => string.charAt(0).toUpperCase() + string.toLowerCase().slice(1)
 
 console.log(capitalize("bOb")) // returns Bob
 console.log(capitalize("TAYLOR")) // returns Taylor
