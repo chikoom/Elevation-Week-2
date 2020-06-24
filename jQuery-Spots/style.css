@@ -1,0 +1,30 @@
+.box{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: blueviolet;
+}
+
+#my-input{
+  display: block;
+}
+
+.hoverMe{
+  height: 100px;
+  width:100px;
+  background-color: darkkhaki;
+  line-height: 100px;
+  text-align: center;
+}
+
+.blueBox{
+  background-color: darkturquoise;
+}
+
+.box2{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: purple;
+  display: inline-block;
+}
